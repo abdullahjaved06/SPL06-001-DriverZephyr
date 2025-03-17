@@ -1168,4 +1168,36 @@ zephyr_udc0: &usbd {
  status = "okay";
 };
 # 0 "<command-line>" 2
+# 1 "/media/abdullah/Development/Abdullah/projects/AircraftMonitoringDevice/Firmware/custom_drivers/spl_001_driver/nrf52840dk_nrf52840.overlay" 1
+
+&i2c0{
+    compatible = "nordic,nrf-twi";
+    status = "okay";
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-1 = <&i2c0_sleep>;
+    pinctrl-names = "default", "sleep";
+    spl06: spl06@76 {
+        compatible = "i2c-device";
+        reg = <0x76>;
+        label = "SPL06";
+    };
+};
+
+&pinctrl {
+    i2c0_default: i2c0_default {
+  group1 {
+   psels = <((((((1) * 32U) + (9)) & 0x7FU) << 0U) | ((12U & 0xFFFFU) << 16U))>,
+    <((((((0) * 32U) + (12)) & 0x7FU) << 0U) | ((11U & 0xFFFFU) << 16U))>;
+  };
+ };
+
+ i2c0_sleep: i2c0_sleep {
+  group1 {
+   psels = <((((((1) * 32U) + (9)) & 0x7FU) << 0U) | ((12U & 0xFFFFU) << 16U))>,
+    <((((((0) * 32U) + (12)) & 0x7FU) << 0U) | ((11U & 0xFFFFU) << 16U))>;
+   low-power-enable;
+  };
+ };
+};
+# 0 "<command-line>" 2
 # 1 "/home/abdullah/ncs/v2.5.0/zephyr/misc/empty_file.c"

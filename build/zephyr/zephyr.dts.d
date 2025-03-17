@@ -19,4 +19,5 @@ empty_file.o: /home/abdullah/ncs/v2.5.0/zephyr/misc/empty_file.c \
  /home/abdullah/ncs/v2.5.0/zephyr/dts/common/freq.h \
  /home/abdullah/ncs/v2.5.0/zephyr/dts/arm/nordic/override.dtsi \
  /home/abdullah/ncs/v2.5.0/zephyr/boards/arm/nrf52840dk_nrf52840/nrf52840dk_nrf52840-pinctrl.dtsi \
- /home/abdullah/ncs/v2.5.0/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h
+ /home/abdullah/ncs/v2.5.0/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h \
+ /media/abdullah/Development/Abdullah/projects/AircraftMonitoringDevice/Firmware/custom_drivers/spl_001_driver/nrf52840dk_nrf52840.overlay

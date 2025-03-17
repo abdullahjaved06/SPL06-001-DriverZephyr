@@ -132,6 +132,11 @@
 			pinctrl-0 = < &i2c0_default >;
 			pinctrl-1 = < &i2c0_sleep >;
 			pinctrl-names = "default", "sleep";
+			spl06: spl06@76 {
+				compatible = "i2c-device";
+				reg = < 0x76 >;
+				label = "SPL06";
+			};
 		};
 		spi0: spi@40003000 {
 			compatible = "nordic,nrf-spi";
@@ -585,13 +590,13 @@
 		i2c0_default: i2c0_default {
 			phandle = < 0x4 >;
 			group1 {
-				psels = < 0xc001a >, < 0xb001b >;
+				psels = < 0xc0029 >, < 0xb000c >;
 			};
 		};
 		i2c0_sleep: i2c0_sleep {
 			phandle = < 0x5 >;
 			group1 {
-				psels = < 0xc001a >, < 0xb001b >;
+				psels = < 0xc0029 >, < 0xb000c >;
 				low-power-enable;
 			};
 		};
