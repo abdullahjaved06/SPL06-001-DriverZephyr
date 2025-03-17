@@ -1169,7 +1169,6 @@ zephyr_udc0: &usbd {
 };
 # 0 "<command-line>" 2
 # 1 "/media/abdullah/Development/Abdullah/projects/AircraftMonitoringDevice/Firmware/custom_drivers/spl_001_driver/nrf52840dk_nrf52840.overlay" 1
-
 &i2c0{
     compatible = "nordic,nrf-twi";
     status = "okay";
