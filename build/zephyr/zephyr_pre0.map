@@ -1,6 +1,8 @@
 Archive member included to satisfy reference by file (symbol)
 
 app/libapp.a(main.c.obj)      (--whole-archive)
+app/libapp.a(spl06_001.c.obj)
+                              (--whole-archive)
 zephyr/libzephyr.a(cbprintf_packaged.c.obj)
                               (--whole-archive)
 zephyr/libzephyr.a(dec.c.obj)
@@ -318,6 +320,12 @@ Discarded input sections
  .text          0x0000000000000000        0x0 app/libapp.a(main.c.obj)
  .data          0x0000000000000000        0x0 app/libapp.a(main.c.obj)
  .bss           0x0000000000000000        0x0 app/libapp.a(main.c.obj)
+ .text          0x0000000000000000        0x0 app/libapp.a(spl06_001.c.obj)
+ .data          0x0000000000000000        0x0 app/libapp.a(spl06_001.c.obj)
+ .bss           0x0000000000000000        0x0 app/libapp.a(spl06_001.c.obj)
+ .debug_line    0x0000000000000000        0x0 app/libapp.a(spl06_001.c.obj)
+ .debug_str     0x0000000000000000      0x1fa app/libapp.a(spl06_001.c.obj)
+ .comment       0x0000000000000000       0x21 app/libapp.a(spl06_001.c.obj)
  .text          0x0000000000000000        0x0 zephyr/libzephyr.a(cbprintf_packaged.c.obj)
  .data          0x0000000000000000        0x0 zephyr/libzephyr.a(cbprintf_packaged.c.obj)
  .bss           0x0000000000000000        0x0 zephyr/libzephyr.a(cbprintf_packaged.c.obj)
@@ -4073,83 +4081,83 @@ noinit          0x0000000020001000      0xe0c
  .debug_abbrev  0x000000000000cc2d       0x62 zephyr/CMakeFiles/offsets.dir/./arch/arm/core/offsets/offsets.c.obj
  .debug_abbrev  0x000000000000cc8f      0x11a zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
 
-.debug_line     0x0000000000000000    0x2055f
+.debug_line     0x0000000000000000    0x2056e
  *(SORT_BY_ALIGNMENT(.debug_line) SORT_BY_ALIGNMENT(.debug_line.*) SORT_BY_ALIGNMENT(.debug_line_end))
- .debug_line    0x0000000000000000      0x24c app/libapp.a(main.c.obj)
- .debug_line    0x000000000000024c     0x113d zephyr/libzephyr.a(cbprintf_packaged.c.obj)
- .debug_line    0x0000000000001389      0x3c4 zephyr/libzephyr.a(printk.c.obj)
- .debug_line    0x000000000000174d      0x3ba zephyr/libzephyr.a(thread_entry.c.obj)
- .debug_line    0x0000000000001b07     0x11d0 zephyr/libzephyr.a(heap.c.obj)
- .debug_line    0x0000000000002cd7     0x124b zephyr/libzephyr.a(onoff.c.obj)
- .debug_line    0x0000000000003f22      0x28c zephyr/libzephyr.a(notify.c.obj)
- .debug_line    0x00000000000041ae      0x1ea zephyr/libzephyr.a(reboot.c.obj)
- .debug_line    0x0000000000004398      0x257 zephyr/libzephyr.a(configs.c.obj)
- .debug_line    0x00000000000045ef       0x7c zephyr/libzephyr.a(soc_nrf_common.S.obj)
- .debug_line    0x000000000000466b      0x1a1 zephyr/libzephyr.a(nrf_cc3xx_platform_abort_zephyr.c.obj)
- .debug_line    0x000000000000480c      0x706 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
- .debug_line    0x0000000000004f12       0xa7 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(cpu_idle.S.obj)
- .debug_line    0x0000000000004fb9      0x385 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(fatal.c.obj)
- .debug_line    0x000000000000533e      0x3c5 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(irq_manage.c.obj)
- .debug_line    0x0000000000005703       0xcb zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi.c.obj)
- .debug_line    0x00000000000057ce       0x77 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi_on_reset.S.obj)
- .debug_line    0x0000000000005845      0x355 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(prep_c.c.obj)
- .debug_line    0x0000000000005b9a      0x3ee zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap.c.obj)
- .debug_line    0x0000000000005f88       0xd8 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap_helper.S.obj)
- .debug_line    0x0000000000006060      0x4f3 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(thread.c.obj)
- .debug_line    0x0000000000006553       0x8e zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(isr_wrapper.S.obj)
- .debug_line    0x00000000000065e1      0x4b9 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(tls.c.obj)
- .debug_line    0x0000000000006a9a       0x8a zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(exc_exit.S.obj)
- .debug_line    0x0000000000006b24      0x930 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault.c.obj)
- .debug_line    0x0000000000007454       0x84 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault_s.S.obj)
- .debug_line    0x00000000000074d8      0x278 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(irq_init.c.obj)
- .debug_line    0x0000000000007750       0x9b zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(reset.S.obj)
- .debug_line    0x00000000000077eb      0x544 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(scb.c.obj)
- .debug_line    0x0000000000007d2f      0x490 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(thread_abort.c.obj)
- .debug_line    0x00000000000081bf       0x85 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(__aeabi_read_tp.S.obj)
- .debug_line    0x0000000000008244      0x4c6 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
- .debug_line    0x000000000000870a      0x84d zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
- .debug_line    0x0000000000008f57      0x755 zephyr/lib/libc/picolibc/liblib__libc__picolibc.a(libc-hooks.c.obj)
- .debug_line    0x00000000000096ac      0x80e zephyr/lib/libc/common/liblib__libc__common.a(malloc.c.obj)
- .debug_line    0x0000000000009eba      0x269 zephyr/soc/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
- .debug_line    0x000000000000a123      0x38a zephyr/soc/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(soc.c.obj)
- .debug_line    0x000000000000a4ad     0x1222 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
- .debug_line    0x000000000000b6cf      0x3c6 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
- .debug_line    0x000000000000ba95      0xcdc zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
- .debug_line    0x000000000000c771      0x2fe zephyr/drivers/i2c/libdrivers__i2c.a(i2c_common.c.obj)
- .debug_line    0x000000000000ca6f      0x937 zephyr/drivers/i2c/libdrivers__i2c.a(i2c_nrfx_twi.c.obj)
- .debug_line    0x000000000000d3a6      0x217 zephyr/drivers/pinctrl/libdrivers__pinctrl.a(common.c.obj)
- .debug_line    0x000000000000d5bd      0x5b5 zephyr/drivers/pinctrl/libdrivers__pinctrl.a(pinctrl_nrf.c.obj)
- .debug_line    0x000000000000db72      0xfad zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
- .debug_line    0x000000000000eb1f     0x1339 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
- .debug_line    0x000000000000fe58      0x313 modules/nrf/lib/fatal_error/lib..__nrf__lib__fatal_error.a(fatal_error.c.obj)
- .debug_line    0x000000000001016b      0x280 modules/nrf/drivers/hw_cc310/lib..__nrf__drivers__hw_cc310.a(hw_cc310.c.obj)
- .debug_line    0x00000000000103eb      0x5b6 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52840.c.obj)
- .debug_line    0x00000000000109a1      0x27d modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_glue.c.obj)
- .debug_line    0x0000000000010c1e      0x323 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_flag32_allocator.c.obj)
- .debug_line    0x0000000000010f41      0x75f modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gppi_ppi.c.obj)
- .debug_line    0x00000000000116a0      0xbd7 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
- .debug_line    0x0000000000012277     0x2002 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
- .debug_line    0x0000000000014279      0xb43 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
- .debug_line    0x0000000000014dbc     0x161f modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_twi.c.obj)
- .debug_line    0x00000000000163db      0x534 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_twi_twim.c.obj)
- .debug_line    0x000000000001690f     0x158b modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
- .debug_line    0x0000000000017e9a      0x479 modules/segger/libmodules__segger.a(SEGGER_RTT_zephyr.c.obj)
- .debug_line    0x0000000000018313      0x1a3 zephyr/kernel/libkernel.a(busy_wait.c.obj)
- .debug_line    0x00000000000184b6      0x3be zephyr/kernel/libkernel.a(device.c.obj)
- .debug_line    0x0000000000018874       0x9d zephyr/kernel/libkernel.a(errno.c.obj)
- .debug_line    0x0000000000018911      0x5f1 zephyr/kernel/libkernel.a(fatal.c.obj)
- .debug_line    0x0000000000018f02      0xb61 zephyr/kernel/libkernel.a(init.c.obj)
- .debug_line    0x0000000000019a63      0x847 zephyr/kernel/libkernel.a(mem_slab.c.obj)
- .debug_line    0x000000000001a2aa      0xcce zephyr/kernel/libkernel.a(thread.c.obj)
- .debug_line    0x000000000001af78      0x33e zephyr/kernel/libkernel.a(idle.c.obj)
- .debug_line    0x000000000001b2b6      0x8b3 zephyr/kernel/libkernel.a(mutex.c.obj)
- .debug_line    0x000000000001bb69      0x696 zephyr/kernel/libkernel.a(sem.c.obj)
- .debug_line    0x000000000001c1ff     0x2fb1 zephyr/kernel/libkernel.a(sched.c.obj)
- .debug_line    0x000000000001f1b0      0x25f zephyr/kernel/libkernel.a(xip.c.obj)
- .debug_line    0x000000000001f40f      0xdec zephyr/kernel/libkernel.a(timeout.c.obj)
- .debug_line    0x00000000000201fb       0xa5 zephyr/kernel/libkernel.a(banner.c.obj)
- .debug_line    0x00000000000202a0      0x133 zephyr/CMakeFiles/offsets.dir/./arch/arm/core/offsets/offsets.c.obj
- .debug_line    0x00000000000203d3      0x18c zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
+ .debug_line    0x0000000000000000      0x25b app/libapp.a(main.c.obj)
+ .debug_line    0x000000000000025b     0x113d zephyr/libzephyr.a(cbprintf_packaged.c.obj)
+ .debug_line    0x0000000000001398      0x3c4 zephyr/libzephyr.a(printk.c.obj)
+ .debug_line    0x000000000000175c      0x3ba zephyr/libzephyr.a(thread_entry.c.obj)
+ .debug_line    0x0000000000001b16     0x11d0 zephyr/libzephyr.a(heap.c.obj)
+ .debug_line    0x0000000000002ce6     0x124b zephyr/libzephyr.a(onoff.c.obj)
+ .debug_line    0x0000000000003f31      0x28c zephyr/libzephyr.a(notify.c.obj)
+ .debug_line    0x00000000000041bd      0x1ea zephyr/libzephyr.a(reboot.c.obj)
+ .debug_line    0x00000000000043a7      0x257 zephyr/libzephyr.a(configs.c.obj)
+ .debug_line    0x00000000000045fe       0x7c zephyr/libzephyr.a(soc_nrf_common.S.obj)
+ .debug_line    0x000000000000467a      0x1a1 zephyr/libzephyr.a(nrf_cc3xx_platform_abort_zephyr.c.obj)
+ .debug_line    0x000000000000481b      0x706 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+ .debug_line    0x0000000000004f21       0xa7 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(cpu_idle.S.obj)
+ .debug_line    0x0000000000004fc8      0x385 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(fatal.c.obj)
+ .debug_line    0x000000000000534d      0x3c5 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(irq_manage.c.obj)
+ .debug_line    0x0000000000005712       0xcb zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi.c.obj)
+ .debug_line    0x00000000000057dd       0x77 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi_on_reset.S.obj)
+ .debug_line    0x0000000000005854      0x355 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(prep_c.c.obj)
+ .debug_line    0x0000000000005ba9      0x3ee zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap.c.obj)
+ .debug_line    0x0000000000005f97       0xd8 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap_helper.S.obj)
+ .debug_line    0x000000000000606f      0x4f3 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(thread.c.obj)
+ .debug_line    0x0000000000006562       0x8e zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(isr_wrapper.S.obj)
+ .debug_line    0x00000000000065f0      0x4b9 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(tls.c.obj)
+ .debug_line    0x0000000000006aa9       0x8a zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(exc_exit.S.obj)
+ .debug_line    0x0000000000006b33      0x930 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault.c.obj)
+ .debug_line    0x0000000000007463       0x84 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault_s.S.obj)
+ .debug_line    0x00000000000074e7      0x278 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(irq_init.c.obj)
+ .debug_line    0x000000000000775f       0x9b zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(reset.S.obj)
+ .debug_line    0x00000000000077fa      0x544 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(scb.c.obj)
+ .debug_line    0x0000000000007d3e      0x490 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(thread_abort.c.obj)
+ .debug_line    0x00000000000081ce       0x85 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(__aeabi_read_tp.S.obj)
+ .debug_line    0x0000000000008253      0x4c6 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
+ .debug_line    0x0000000000008719      0x84d zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
+ .debug_line    0x0000000000008f66      0x755 zephyr/lib/libc/picolibc/liblib__libc__picolibc.a(libc-hooks.c.obj)
+ .debug_line    0x00000000000096bb      0x80e zephyr/lib/libc/common/liblib__libc__common.a(malloc.c.obj)
+ .debug_line    0x0000000000009ec9      0x269 zephyr/soc/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
+ .debug_line    0x000000000000a132      0x38a zephyr/soc/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(soc.c.obj)
+ .debug_line    0x000000000000a4bc     0x1222 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+ .debug_line    0x000000000000b6de      0x3c6 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
+ .debug_line    0x000000000000baa4      0xcdc zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+ .debug_line    0x000000000000c780      0x2fe zephyr/drivers/i2c/libdrivers__i2c.a(i2c_common.c.obj)
+ .debug_line    0x000000000000ca7e      0x937 zephyr/drivers/i2c/libdrivers__i2c.a(i2c_nrfx_twi.c.obj)
+ .debug_line    0x000000000000d3b5      0x217 zephyr/drivers/pinctrl/libdrivers__pinctrl.a(common.c.obj)
+ .debug_line    0x000000000000d5cc      0x5b5 zephyr/drivers/pinctrl/libdrivers__pinctrl.a(pinctrl_nrf.c.obj)
+ .debug_line    0x000000000000db81      0xfad zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+ .debug_line    0x000000000000eb2e     0x1339 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+ .debug_line    0x000000000000fe67      0x313 modules/nrf/lib/fatal_error/lib..__nrf__lib__fatal_error.a(fatal_error.c.obj)
+ .debug_line    0x000000000001017a      0x280 modules/nrf/drivers/hw_cc310/lib..__nrf__drivers__hw_cc310.a(hw_cc310.c.obj)
+ .debug_line    0x00000000000103fa      0x5b6 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52840.c.obj)
+ .debug_line    0x00000000000109b0      0x27d modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_glue.c.obj)
+ .debug_line    0x0000000000010c2d      0x323 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_flag32_allocator.c.obj)
+ .debug_line    0x0000000000010f50      0x75f modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gppi_ppi.c.obj)
+ .debug_line    0x00000000000116af      0xbd7 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
+ .debug_line    0x0000000000012286     0x2002 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
+ .debug_line    0x0000000000014288      0xb43 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
+ .debug_line    0x0000000000014dcb     0x161f modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_twi.c.obj)
+ .debug_line    0x00000000000163ea      0x534 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_twi_twim.c.obj)
+ .debug_line    0x000000000001691e     0x158b modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
+ .debug_line    0x0000000000017ea9      0x479 modules/segger/libmodules__segger.a(SEGGER_RTT_zephyr.c.obj)
+ .debug_line    0x0000000000018322      0x1a3 zephyr/kernel/libkernel.a(busy_wait.c.obj)
+ .debug_line    0x00000000000184c5      0x3be zephyr/kernel/libkernel.a(device.c.obj)
+ .debug_line    0x0000000000018883       0x9d zephyr/kernel/libkernel.a(errno.c.obj)
+ .debug_line    0x0000000000018920      0x5f1 zephyr/kernel/libkernel.a(fatal.c.obj)
+ .debug_line    0x0000000000018f11      0xb61 zephyr/kernel/libkernel.a(init.c.obj)
+ .debug_line    0x0000000000019a72      0x847 zephyr/kernel/libkernel.a(mem_slab.c.obj)
+ .debug_line    0x000000000001a2b9      0xcce zephyr/kernel/libkernel.a(thread.c.obj)
+ .debug_line    0x000000000001af87      0x33e zephyr/kernel/libkernel.a(idle.c.obj)
+ .debug_line    0x000000000001b2c5      0x8b3 zephyr/kernel/libkernel.a(mutex.c.obj)
+ .debug_line    0x000000000001bb78      0x696 zephyr/kernel/libkernel.a(sem.c.obj)
+ .debug_line    0x000000000001c20e     0x2fb1 zephyr/kernel/libkernel.a(sched.c.obj)
+ .debug_line    0x000000000001f1bf      0x25f zephyr/kernel/libkernel.a(xip.c.obj)
+ .debug_line    0x000000000001f41e      0xdec zephyr/kernel/libkernel.a(timeout.c.obj)
+ .debug_line    0x000000000002020a       0xa5 zephyr/kernel/libkernel.a(banner.c.obj)
+ .debug_line    0x00000000000202af      0x133 zephyr/CMakeFiles/offsets.dir/./arch/arm/core/offsets/offsets.c.obj
+ .debug_line    0x00000000000203e2      0x18c zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
 
 .debug_frame    0x0000000000000000     0x33f8
  *(SORT_BY_ALIGNMENT(.debug_frame))
@@ -4542,313 +4550,315 @@ noinit          0x0000000020001000      0xe0c
  .ARM.attributes
                 0x0000000000000030       0x30 app/libapp.a(main.c.obj)
  .ARM.attributes
-                0x0000000000000060       0x30 zephyr/libzephyr.a(cbprintf_packaged.c.obj)
+                0x0000000000000060       0x30 app/libapp.a(spl06_001.c.obj)
  .ARM.attributes
-                0x0000000000000090       0x30 zephyr/libzephyr.a(dec.c.obj)
+                0x0000000000000090       0x30 zephyr/libzephyr.a(cbprintf_packaged.c.obj)
  .ARM.attributes
-                0x00000000000000c0       0x30 zephyr/libzephyr.a(fdtable.c.obj)
+                0x00000000000000c0       0x30 zephyr/libzephyr.a(dec.c.obj)
  .ARM.attributes
-                0x00000000000000f0       0x30 zephyr/libzephyr.a(hex.c.obj)
+                0x00000000000000f0       0x30 zephyr/libzephyr.a(fdtable.c.obj)
  .ARM.attributes
-                0x0000000000000120       0x30 zephyr/libzephyr.a(printk.c.obj)
+                0x0000000000000120       0x30 zephyr/libzephyr.a(hex.c.obj)
  .ARM.attributes
-                0x0000000000000150       0x30 zephyr/libzephyr.a(rb.c.obj)
+                0x0000000000000150       0x30 zephyr/libzephyr.a(printk.c.obj)
  .ARM.attributes
-                0x0000000000000180       0x30 zephyr/libzephyr.a(sem.c.obj)
+                0x0000000000000180       0x30 zephyr/libzephyr.a(rb.c.obj)
  .ARM.attributes
-                0x00000000000001b0       0x30 zephyr/libzephyr.a(thread_entry.c.obj)
+                0x00000000000001b0       0x30 zephyr/libzephyr.a(sem.c.obj)
  .ARM.attributes
-                0x00000000000001e0       0x30 zephyr/libzephyr.a(timeutil.c.obj)
+                0x00000000000001e0       0x30 zephyr/libzephyr.a(thread_entry.c.obj)
  .ARM.attributes
-                0x0000000000000210       0x30 zephyr/libzephyr.a(heap.c.obj)
+                0x0000000000000210       0x30 zephyr/libzephyr.a(timeutil.c.obj)
  .ARM.attributes
-                0x0000000000000240       0x30 zephyr/libzephyr.a(heap-validate.c.obj)
+                0x0000000000000240       0x30 zephyr/libzephyr.a(heap.c.obj)
  .ARM.attributes
-                0x0000000000000270       0x30 zephyr/libzephyr.a(bitarray.c.obj)
+                0x0000000000000270       0x30 zephyr/libzephyr.a(heap-validate.c.obj)
  .ARM.attributes
-                0x00000000000002a0       0x30 zephyr/libzephyr.a(multi_heap.c.obj)
+                0x00000000000002a0       0x30 zephyr/libzephyr.a(bitarray.c.obj)
  .ARM.attributes
-                0x00000000000002d0       0x30 zephyr/libzephyr.a(onoff.c.obj)
+                0x00000000000002d0       0x30 zephyr/libzephyr.a(multi_heap.c.obj)
  .ARM.attributes
-                0x0000000000000300       0x30 zephyr/libzephyr.a(notify.c.obj)
+                0x0000000000000300       0x30 zephyr/libzephyr.a(onoff.c.obj)
  .ARM.attributes
-                0x0000000000000330       0x30 zephyr/libzephyr.a(cbprintf_complete.c.obj)
+                0x0000000000000330       0x30 zephyr/libzephyr.a(notify.c.obj)
  .ARM.attributes
-                0x0000000000000360       0x30 zephyr/libzephyr.a(assert.c.obj)
+                0x0000000000000360       0x30 zephyr/libzephyr.a(cbprintf_complete.c.obj)
  .ARM.attributes
-                0x0000000000000390       0x30 zephyr/libzephyr.a(reboot.c.obj)
+                0x0000000000000390       0x30 zephyr/libzephyr.a(assert.c.obj)
  .ARM.attributes
-                0x00000000000003c0       0x30 zephyr/libzephyr.a(configs.c.obj)
+                0x00000000000003c0       0x30 zephyr/libzephyr.a(reboot.c.obj)
  .ARM.attributes
-                0x00000000000003f0       0x1c zephyr/libzephyr.a(soc_nrf_common.S.obj)
+                0x00000000000003f0       0x30 zephyr/libzephyr.a(configs.c.obj)
  .ARM.attributes
-                0x000000000000040c       0x30 zephyr/libzephyr.a(validate_base_addresses.c.obj)
+                0x0000000000000420       0x1c zephyr/libzephyr.a(soc_nrf_common.S.obj)
  .ARM.attributes
-                0x000000000000043c       0x30 zephyr/libzephyr.a(validate_enabled_instances.c.obj)
+                0x000000000000043c       0x30 zephyr/libzephyr.a(validate_base_addresses.c.obj)
  .ARM.attributes
-                0x000000000000046c       0x30 zephyr/libzephyr.a(tracing_none.c.obj)
+                0x000000000000046c       0x30 zephyr/libzephyr.a(validate_enabled_instances.c.obj)
  .ARM.attributes
-                0x000000000000049c       0x30 zephyr/libzephyr.a(nrf_cc3xx_platform_abort_zephyr.c.obj)
+                0x000000000000049c       0x30 zephyr/libzephyr.a(tracing_none.c.obj)
  .ARM.attributes
-                0x00000000000004cc       0x30 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x00000000000004cc       0x30 zephyr/libzephyr.a(nrf_cc3xx_platform_abort_zephyr.c.obj)
  .ARM.attributes
-                0x00000000000004fc       0x30 zephyr/arch/common/libarch__common.a(sw_isr_common.c.obj)
+                0x00000000000004fc       0x30 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
  .ARM.attributes
-                0x000000000000052c       0x1c zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(cpu_idle.S.obj)
+                0x000000000000052c       0x30 zephyr/arch/common/libarch__common.a(sw_isr_common.c.obj)
  .ARM.attributes
-                0x0000000000000548       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(fatal.c.obj)
+                0x000000000000055c       0x1c zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(cpu_idle.S.obj)
  .ARM.attributes
-                0x0000000000000578       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(irq_manage.c.obj)
+                0x0000000000000578       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(fatal.c.obj)
  .ARM.attributes
-                0x00000000000005a8       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi.c.obj)
+                0x00000000000005a8       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(irq_manage.c.obj)
  .ARM.attributes
-                0x00000000000005d8       0x1c zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi_on_reset.S.obj)
+                0x00000000000005d8       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi.c.obj)
  .ARM.attributes
-                0x00000000000005f4       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(prep_c.c.obj)
+                0x0000000000000608       0x1c zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi_on_reset.S.obj)
  .ARM.attributes
-                0x0000000000000624       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap.c.obj)
+                0x0000000000000624       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(prep_c.c.obj)
  .ARM.attributes
-                0x0000000000000654       0x1c zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap_helper.S.obj)
+                0x0000000000000654       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap.c.obj)
  .ARM.attributes
-                0x0000000000000670       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(thread.c.obj)
+                0x0000000000000684       0x1c zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap_helper.S.obj)
  .ARM.attributes
-                0x00000000000006a0       0x1e zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(isr_wrapper.S.obj)
+                0x00000000000006a0       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(thread.c.obj)
  .ARM.attributes
-                0x00000000000006be       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(tls.c.obj)
+                0x00000000000006d0       0x1e zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(isr_wrapper.S.obj)
  .ARM.attributes
-                0x00000000000006ee       0x1c zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(exc_exit.S.obj)
+                0x00000000000006ee       0x30 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(tls.c.obj)
  .ARM.attributes
-                0x000000000000070a       0x30 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault.c.obj)
+                0x000000000000071e       0x1c zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(exc_exit.S.obj)
  .ARM.attributes
-                0x000000000000073a       0x1c zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault_s.S.obj)
+                0x000000000000073a       0x30 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault.c.obj)
  .ARM.attributes
-                0x0000000000000756       0x30 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fpu.c.obj)
+                0x000000000000076a       0x1c zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault_s.S.obj)
  .ARM.attributes
-                0x0000000000000786       0x30 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(irq_init.c.obj)
+                0x0000000000000786       0x30 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fpu.c.obj)
  .ARM.attributes
-                0x00000000000007b6       0x1c zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(reset.S.obj)
+                0x00000000000007b6       0x30 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(irq_init.c.obj)
  .ARM.attributes
-                0x00000000000007d2       0x30 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(scb.c.obj)
+                0x00000000000007e6       0x1c zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(reset.S.obj)
  .ARM.attributes
-                0x0000000000000802       0x30 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(thread_abort.c.obj)
+                0x0000000000000802       0x30 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(scb.c.obj)
  .ARM.attributes
-                0x0000000000000832       0x1e zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(vector_table.S.obj)
+                0x0000000000000832       0x30 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(thread_abort.c.obj)
  .ARM.attributes
-                0x0000000000000850       0x1c zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(__aeabi_read_tp.S.obj)
+                0x0000000000000862       0x1e zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(vector_table.S.obj)
  .ARM.attributes
-                0x000000000000086c       0x30 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
+                0x0000000000000880       0x1c zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(__aeabi_read_tp.S.obj)
  .ARM.attributes
-                0x000000000000089c       0x30 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
+                0x000000000000089c       0x30 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
  .ARM.attributes
-                0x00000000000008cc       0x30 zephyr/lib/libc/picolibc/liblib__libc__picolibc.a(libc-hooks.c.obj)
+                0x00000000000008cc       0x30 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
  .ARM.attributes
-                0x00000000000008fc       0x30 zephyr/lib/libc/common/liblib__libc__common.a(abort.c.obj)
+                0x00000000000008fc       0x30 zephyr/lib/libc/picolibc/liblib__libc__picolibc.a(libc-hooks.c.obj)
  .ARM.attributes
-                0x000000000000092c       0x30 zephyr/lib/libc/common/liblib__libc__common.a(malloc.c.obj)
+                0x000000000000092c       0x30 zephyr/lib/libc/common/liblib__libc__common.a(abort.c.obj)
  .ARM.attributes
-                0x000000000000095c       0x30 zephyr/soc/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
+                0x000000000000095c       0x30 zephyr/lib/libc/common/liblib__libc__common.a(malloc.c.obj)
  .ARM.attributes
-                0x000000000000098c       0x30 zephyr/soc/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(soc.c.obj)
+                0x000000000000098c       0x30 zephyr/soc/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
  .ARM.attributes
-                0x00000000000009bc       0x30 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+                0x00000000000009bc       0x30 zephyr/soc/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(soc.c.obj)
  .ARM.attributes
-                0x00000000000009ec       0x30 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
+                0x00000000000009ec       0x30 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
  .ARM.attributes
-                0x0000000000000a1c       0x30 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+                0x0000000000000a1c       0x30 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
  .ARM.attributes
-                0x0000000000000a4c       0x30 zephyr/drivers/i2c/libdrivers__i2c.a(i2c_common.c.obj)
+                0x0000000000000a4c       0x30 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
  .ARM.attributes
-                0x0000000000000a7c       0x30 zephyr/drivers/i2c/libdrivers__i2c.a(i2c_nrfx_twi.c.obj)
+                0x0000000000000a7c       0x30 zephyr/drivers/i2c/libdrivers__i2c.a(i2c_common.c.obj)
  .ARM.attributes
-                0x0000000000000aac       0x30 zephyr/drivers/pinctrl/libdrivers__pinctrl.a(common.c.obj)
+                0x0000000000000aac       0x30 zephyr/drivers/i2c/libdrivers__i2c.a(i2c_nrfx_twi.c.obj)
  .ARM.attributes
-                0x0000000000000adc       0x30 zephyr/drivers/pinctrl/libdrivers__pinctrl.a(pinctrl_nrf.c.obj)
+                0x0000000000000adc       0x30 zephyr/drivers/pinctrl/libdrivers__pinctrl.a(common.c.obj)
  .ARM.attributes
-                0x0000000000000b0c       0x30 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+                0x0000000000000b0c       0x30 zephyr/drivers/pinctrl/libdrivers__pinctrl.a(pinctrl_nrf.c.obj)
  .ARM.attributes
-                0x0000000000000b3c       0x30 zephyr/drivers/timer/libdrivers__timer.a(sys_clock_init.c.obj)
+                0x0000000000000b3c       0x30 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
  .ARM.attributes
-                0x0000000000000b6c       0x30 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+                0x0000000000000b6c       0x30 zephyr/drivers/timer/libdrivers__timer.a(sys_clock_init.c.obj)
  .ARM.attributes
-                0x0000000000000b9c       0x30 modules/nrf/lib/fatal_error/lib..__nrf__lib__fatal_error.a(fatal_error.c.obj)
+                0x0000000000000b9c       0x30 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
  .ARM.attributes
-                0x0000000000000bcc       0x30 modules/nrf/drivers/hw_cc310/lib..__nrf__drivers__hw_cc310.a(hw_cc310.c.obj)
+                0x0000000000000bcc       0x30 modules/nrf/lib/fatal_error/lib..__nrf__lib__fatal_error.a(fatal_error.c.obj)
  .ARM.attributes
-                0x0000000000000bfc       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52840.c.obj)
+                0x0000000000000bfc       0x30 modules/nrf/drivers/hw_cc310/lib..__nrf__drivers__hw_cc310.a(hw_cc310.c.obj)
  .ARM.attributes
-                0x0000000000000c2c       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_glue.c.obj)
+                0x0000000000000c2c       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52840.c.obj)
  .ARM.attributes
-                0x0000000000000c5c       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_flag32_allocator.c.obj)
+                0x0000000000000c5c       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_glue.c.obj)
  .ARM.attributes
-                0x0000000000000c8c       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gppi_ppi.c.obj)
+                0x0000000000000c8c       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_flag32_allocator.c.obj)
  .ARM.attributes
-                0x0000000000000cbc       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
+                0x0000000000000cbc       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gppi_ppi.c.obj)
  .ARM.attributes
-                0x0000000000000cec       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
+                0x0000000000000cec       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
  .ARM.attributes
-                0x0000000000000d1c       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
+                0x0000000000000d1c       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
  .ARM.attributes
-                0x0000000000000d4c       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_twi.c.obj)
+                0x0000000000000d4c       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
  .ARM.attributes
-                0x0000000000000d7c       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_twi_twim.c.obj)
+                0x0000000000000d7c       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_twi.c.obj)
  .ARM.attributes
-                0x0000000000000dac       0x30 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
+                0x0000000000000dac       0x30 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_twi_twim.c.obj)
  .ARM.attributes
-                0x0000000000000ddc       0x30 modules/segger/libmodules__segger.a(SEGGER_RTT_zephyr.c.obj)
+                0x0000000000000ddc       0x30 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
  .ARM.attributes
-                0x0000000000000e0c       0x30 zephyr/kernel/libkernel.a(busy_wait.c.obj)
+                0x0000000000000e0c       0x30 modules/segger/libmodules__segger.a(SEGGER_RTT_zephyr.c.obj)
  .ARM.attributes
-                0x0000000000000e3c       0x30 zephyr/kernel/libkernel.a(device.c.obj)
+                0x0000000000000e3c       0x30 zephyr/kernel/libkernel.a(busy_wait.c.obj)
  .ARM.attributes
-                0x0000000000000e6c       0x30 zephyr/kernel/libkernel.a(errno.c.obj)
+                0x0000000000000e6c       0x30 zephyr/kernel/libkernel.a(device.c.obj)
  .ARM.attributes
-                0x0000000000000e9c       0x30 zephyr/kernel/libkernel.a(fatal.c.obj)
+                0x0000000000000e9c       0x30 zephyr/kernel/libkernel.a(errno.c.obj)
  .ARM.attributes
-                0x0000000000000ecc       0x30 zephyr/kernel/libkernel.a(init.c.obj)
+                0x0000000000000ecc       0x30 zephyr/kernel/libkernel.a(fatal.c.obj)
  .ARM.attributes
-                0x0000000000000efc       0x30 zephyr/kernel/libkernel.a(mem_slab.c.obj)
+                0x0000000000000efc       0x30 zephyr/kernel/libkernel.a(init.c.obj)
  .ARM.attributes
-                0x0000000000000f2c       0x30 zephyr/kernel/libkernel.a(thread.c.obj)
+                0x0000000000000f2c       0x30 zephyr/kernel/libkernel.a(mem_slab.c.obj)
  .ARM.attributes
-                0x0000000000000f5c       0x30 zephyr/kernel/libkernel.a(idle.c.obj)
+                0x0000000000000f5c       0x30 zephyr/kernel/libkernel.a(thread.c.obj)
  .ARM.attributes
-                0x0000000000000f8c       0x30 zephyr/kernel/libkernel.a(mutex.c.obj)
+                0x0000000000000f8c       0x30 zephyr/kernel/libkernel.a(idle.c.obj)
  .ARM.attributes
-                0x0000000000000fbc       0x30 zephyr/kernel/libkernel.a(sem.c.obj)
+                0x0000000000000fbc       0x30 zephyr/kernel/libkernel.a(mutex.c.obj)
  .ARM.attributes
-                0x0000000000000fec       0x30 zephyr/kernel/libkernel.a(sched.c.obj)
+                0x0000000000000fec       0x30 zephyr/kernel/libkernel.a(sem.c.obj)
  .ARM.attributes
-                0x000000000000101c       0x30 zephyr/kernel/libkernel.a(condvar.c.obj)
+                0x000000000000101c       0x30 zephyr/kernel/libkernel.a(sched.c.obj)
  .ARM.attributes
-                0x000000000000104c       0x30 zephyr/kernel/libkernel.a(xip.c.obj)
+                0x000000000000104c       0x30 zephyr/kernel/libkernel.a(condvar.c.obj)
  .ARM.attributes
-                0x000000000000107c       0x30 zephyr/kernel/libkernel.a(timeout.c.obj)
+                0x000000000000107c       0x30 zephyr/kernel/libkernel.a(xip.c.obj)
  .ARM.attributes
-                0x00000000000010ac       0x30 zephyr/kernel/libkernel.a(banner.c.obj)
+                0x00000000000010ac       0x30 zephyr/kernel/libkernel.a(timeout.c.obj)
  .ARM.attributes
-                0x00000000000010dc       0x30 zephyr/CMakeFiles/offsets.dir/./arch/arm/core/offsets/offsets.c.obj
+                0x00000000000010dc       0x30 zephyr/kernel/libkernel.a(banner.c.obj)
  .ARM.attributes
-                0x000000000000110c       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
+                0x000000000000110c       0x30 zephyr/CMakeFiles/offsets.dir/./arch/arm/core/offsets/offsets.c.obj
  .ARM.attributes
-                0x000000000000112a       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
+                0x000000000000113c       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
  .ARM.attributes
-                0x0000000000001148       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
+                0x000000000000115a       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
-                0x0000000000001166       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
+                0x0000000000001178       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
  .ARM.attributes
-                0x0000000000001184       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
+                0x0000000000001196       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
  .ARM.attributes
-                0x00000000000011a2       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_aeabi_ldivmod.o)
+                0x00000000000011b4       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
  .ARM.attributes
-                0x00000000000011c0       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+                0x00000000000011d2       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_aeabi_ldivmod.o)
  .ARM.attributes
-                0x00000000000011de       0x2e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_fixdfdi.o)
+                0x00000000000011f0       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
-                0x000000000000120c       0x2e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_fixunsdfdi.o)
+                0x000000000000120e       0x2e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_fixdfdi.o)
  .ARM.attributes
-                0x000000000000123a       0x2e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x000000000000123c       0x2e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_fixunsdfdi.o)
  .ARM.attributes
-                0x0000000000001268       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x000000000000126a       0x2e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
  .ARM.attributes
-                0x0000000000001286       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
+                0x0000000000001298       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x00000000000012a4       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
+                0x00000000000012b6       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
  .ARM.attributes
-                0x00000000000012c2       0x30 zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
+                0x00000000000012d4       0x1e /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
  .ARM.attributes
-                0x00000000000012f2       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(nrf_cc3xx_platform.c.obj)
+                0x00000000000012f2       0x30 zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
  .ARM.attributes
-                0x0000000000001320       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(nrf_cc3xx_platform_abort.c.obj)
+                0x0000000000001322       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(nrf_cc3xx_platform.c.obj)
  .ARM.attributes
-                0x000000000000134e       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x0000000000001350       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(nrf_cc3xx_platform_abort.c.obj)
  .ARM.attributes
-                0x000000000000137c       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_lib.c.obj)
+                0x000000000000137e       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(nrf_cc3xx_platform_mutex.c.obj)
  .ARM.attributes
-                0x00000000000013aa       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_hal.c.obj)
+                0x00000000000013ac       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_lib.c.obj)
  .ARM.attributes
-                0x00000000000013d8       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal.c.obj)
+                0x00000000000013da       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_hal.c.obj)
  .ARM.attributes
-                0x0000000000001406       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_dma.c.obj)
+                0x0000000000001408       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal.c.obj)
  .ARM.attributes
-                0x0000000000001434       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_interrupt_ctrl.c.obj)
+                0x0000000000001436       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_dma.c.obj)
  .ARM.attributes
-                0x0000000000001462       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_mem.c.obj)
+                0x0000000000001464       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_interrupt_ctrl.c.obj)
  .ARM.attributes
-                0x0000000000001490       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_mutex.c.obj)
+                0x0000000000001492       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_mem.c.obj)
  .ARM.attributes
-                0x00000000000014be       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_pm.c.obj)
+                0x00000000000014c0       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_mutex.c.obj)
  .ARM.attributes
-                0x00000000000014ec       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(nrf_cc3xx_platform_ctr_drbg.c.obj)
+                0x00000000000014ee       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_pm.c.obj)
  .ARM.attributes
-                0x000000000000151a       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(nrf_cc3xx_platform_hmac_drbg.c.obj)
+                0x000000000000151c       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(nrf_cc3xx_platform_ctr_drbg.c.obj)
  .ARM.attributes
-                0x0000000000001548       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(llf_rnd_trng90b.c.obj)
+                0x000000000000154a       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(nrf_cc3xx_platform_hmac_drbg.c.obj)
  .ARM.attributes
-                0x0000000000001576       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(mbedtls_common.c.obj)
+                0x0000000000001578       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(llf_rnd_trng90b.c.obj)
  .ARM.attributes
-                0x00000000000015a4       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(ctr_drbg.c.obj)
+                0x00000000000015a6       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(mbedtls_common.c.obj)
  .ARM.attributes
-                0x00000000000015d2       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(hmac_drbg_alt.c.obj)
+                0x00000000000015d4       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(ctr_drbg.c.obj)
  .ARM.attributes
-                0x0000000000001600       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_rng_plat.c.obj)
+                0x0000000000001602       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(hmac_drbg_alt.c.obj)
  .ARM.attributes
-                0x000000000000162e       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(entropy.c.obj)
+                0x0000000000001630       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_rng_plat.c.obj)
  .ARM.attributes
-                0x000000000000165c       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_trng.c.obj)
+                0x000000000000165e       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(entropy.c.obj)
  .ARM.attributes
-                0x000000000000168a       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(threading_alt.c.obj)
+                0x000000000000168c       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_trng.c.obj)
  .ARM.attributes
-                0x00000000000016b8       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(llf_rnd.c.obj)
+                0x00000000000016ba       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(threading_alt.c.obj)
  .ARM.attributes
-                0x00000000000016e6       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(trng_api.c.obj)
+                0x00000000000016e8       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(llf_rnd.c.obj)
  .ARM.attributes
-                0x0000000000001714       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(aes_alt.c.obj)
+                0x0000000000001716       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(trng_api.c.obj)
  .ARM.attributes
-                0x0000000000001742       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(sha256_alt.c.obj)
+                0x0000000000001744       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(aes_alt.c.obj)
  .ARM.attributes
-                0x0000000000001770       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(mbedtls_hash_common.c.obj)
+                0x0000000000001772       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(sha256_alt.c.obj)
  .ARM.attributes
-                0x000000000000179e       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(sha256.c.obj)
+                0x00000000000017a0       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(mbedtls_hash_common.c.obj)
  .ARM.attributes
-                0x00000000000017cc       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(driver_common.c.obj)
+                0x00000000000017ce       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(sha256.c.obj)
  .ARM.attributes
-                0x00000000000017fa       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(hash_driver.c.obj)
+                0x00000000000017fc       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(driver_common.c.obj)
  .ARM.attributes
-                0x0000000000001828       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(aes_driver.c.obj)
+                0x000000000000182a       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(hash_driver.c.obj)
  .ARM.attributes
-                0x0000000000001856       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(kmu_shared.c.obj)
+                0x0000000000001858       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(aes_driver.c.obj)
  .ARM.attributes
-                0x0000000000001884       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_util_cmac.c.obj)
+                0x0000000000001886       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(kmu_shared.c.obj)
  .ARM.attributes
-                0x00000000000018b2       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_buff_attr.c.obj)
+                0x00000000000018b4       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_util_cmac.c.obj)
  .ARM.attributes
-                0x00000000000018e0       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_ctype_ctype_.c.o)
+                0x00000000000018e2       0x2e /home/abdullah/ncs/v2.5.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.18.a(cc_pal_buff_attr.c.obj)
  .ARM.attributes
-                0x0000000000001912       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_errno_errno.c.o)
+                0x0000000000001910       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_ctype_ctype_.c.o)
  .ARM.attributes
-                0x0000000000001944       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_string_memcmp.c.o)
+                0x0000000000001942       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_errno_errno.c.o)
  .ARM.attributes
-                0x0000000000001976       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_string_strnlen.c.o)
+                0x0000000000001974       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_string_memcmp.c.o)
  .ARM.attributes
-                0x00000000000019a8       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+                0x00000000000019a6       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_string_strnlen.c.o)
  .ARM.attributes
-                0x00000000000019da       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+                0x00000000000019d8       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
  .ARM.attributes
-                0x0000000000001a0c       0x1c /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(strcmp.S.o)
+                0x0000000000001a0a       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
  .ARM.attributes
-                0x0000000000001a28       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(memcpy.c.o)
+                0x0000000000001a3c       0x1c /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(strcmp.S.o)
  .ARM.attributes
-                0x0000000000001a5a       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(memmove.c.o)
+                0x0000000000001a58       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(memcpy.c.o)
  .ARM.attributes
-                0x0000000000001a8c       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(memset.c.o)
+                0x0000000000001a8a       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(memmove.c.o)
  .ARM.attributes
-                0x0000000000001abe       0x17 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(strlen.S.o)
+                0x0000000000001abc       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(memset.c.o)
  .ARM.attributes
-                0x0000000000001ad5       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_string_strchr.c.o)
+                0x0000000000001aee       0x17 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(strlen.S.o)
  .ARM.attributes
-                0x0000000000001b07       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+                0x0000000000001b05       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_string_strchr.c.o)
  .ARM.attributes
-                0x0000000000001b39       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+                0x0000000000001b37       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .ARM.attributes
+                0x0000000000001b69       0x32 /home/abdullah/ncs/toolchains/7795df4459/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/../../picolibc/arm-zephyr-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
  *(SORT_BY_ALIGNMENT(.gnu.attributes))
 
 .last_section   0x0000000000006034        0x4
