@@ -9,7 +9,7 @@
 
 static const struct i2c_dt_spec spl01_dev = I2C_DT_SPEC_GET(DT_NODELABEL(spl06));
 
-
+void read_product_id();
 
 
 #endif

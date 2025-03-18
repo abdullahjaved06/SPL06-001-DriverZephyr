@@ -17,4 +17,9 @@ int main(void)
 		printk("I2C bus not ready\n");
         return;
 	}
+	while(1)
+	{
+		read_product_id();
+		k_msleep(3000);
+	}
 }
