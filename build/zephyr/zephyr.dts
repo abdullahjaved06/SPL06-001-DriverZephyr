@@ -33,6 +33,7 @@
 		mcuboot-led0 = &led0;
 		watchdog0 = &wdt0;
 		spi-flash0 = &mx25r64;
+		i2cenable = &I2C_ENABLE;
 	};
 	soc {
 		#address-cells = < 0x1 >;
@@ -132,9 +133,9 @@
 			pinctrl-0 = < &i2c0_default >;
 			pinctrl-1 = < &i2c0_sleep >;
 			pinctrl-names = "default", "sleep";
-			spl06: spl06@76 {
+			spl06: spl06@77 {
 				compatible = "i2c-device";
-				reg = < 0x76 >;
+				reg = < 0x77 >;
 				label = "SPL06";
 			};
 		};
@@ -786,5 +787,12 @@
 		compatible = "arduino,uno-adc";
 		#io-channel-cells = < 0x1 >;
 		io-channel-map = < 0x0 &adc 0x1 >, < 0x1 &adc 0x2 >, < 0x2 &adc 0x4 >, < 0x3 &adc 0x5 >, < 0x4 &adc 0x6 >, < 0x5 &adc 0x7 >;
+	};
+	CUSTOM_PINS_PCB {
+		compatible = "gpio-keys";
+		I2C_ENABLE: I2C_ENABLE {
+			gpios = < &gpio0 0x8 0x1 >;
+			label = "Enable/Disale I2C devices";
+		};
 	};
 };

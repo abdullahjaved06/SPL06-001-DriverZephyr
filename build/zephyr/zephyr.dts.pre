@@ -1175,9 +1175,9 @@ zephyr_udc0: &usbd {
     pinctrl-0 = <&i2c0_default>;
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
-    spl06: spl06@76 {
+    spl06: spl06@77 {
         compatible = "i2c-device";
-        reg = <0x76>;
+        reg = <0x77>;
         label = "SPL06";
     };
 };
@@ -1197,6 +1197,20 @@ zephyr_udc0: &usbd {
    low-power-enable;
   };
  };
+};
+
+/{
+    CUSTOM_PINS_PCB {
+        compatible = "gpio-keys";
+        I2C_ENABLE:I2C_ENABLE{
+            gpios = <&gpio0 8 (1 << 0) >;
+            label = "Enable/Disale I2C devices";
+        };
+    };
+    aliases {
+  i2cenable = &I2C_ENABLE;
+
+    };
 };
 # 0 "<command-line>" 2
 # 1 "/home/abdullah/ncs/v2.5.0/zephyr/misc/empty_file.c"
